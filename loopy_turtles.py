@@ -80,6 +80,7 @@ def draw_square(t, start_x, start_y, length, rotation_direction, fill_color):
     """
 
 
+
 def draw_star(
     t, start_x, start_y, length, angle, initial_rotation_direction, fill_color
 ):
