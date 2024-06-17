@@ -79,6 +79,19 @@ def draw_square(t, start_x, start_y, length, rotation_direction, fill_color):
     :param fill_color: The color with which to fill in the area drawn by the turtle.
     """
 
+    pick_up_and_move_turtle(t, start_x, start_y)
+
+    t.fillcolor(fill_color)
+    t.begin_fill()
+    for i in range(4):
+        t.forward(length)
+        if rotation_direction == 'left':
+            t.left(90)
+        else:
+            t.right(90)
+        print_turtle_position(t)
+    t.end_fill()
+
 
 
 def draw_star(
